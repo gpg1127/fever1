@@ -5,6 +5,26 @@
         <title></title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.js"></script>
         <script>
+            alert(1==1);//같나요?. 1과 1이 같은가?
+            alert(1!=2);//다른가요?1과 2가 다른가?
+            alert(1<2);//1이 2보다 작은가요?
+            alert(1<=2);//1이 2보다 작거나 같은가요?
+            
+        function setup(){
+            createCanvas(500,500);
+        }
+            function draw(){
+                
+                if(mouseY>350){
+                   background(127);
+            }else if(mouseY>150){
+                 background(80);
+            }else{
+                background(0);
+            }
+     }
+                
+            
         </script>
     </head>
     <body>
