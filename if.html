@@ -12,6 +12,7 @@
             
         function setup(){
             createCanvas(500,500);
+            noCursor();
         }
             function draw(){
                 
@@ -22,6 +23,15 @@
             }else{
                 background(0);
             }
+                
+                if(mouseIsPressed){
+                    noFill();
+                    strokeWeight(10);
+                  stroke(250,250,300,300);
+                    ellipse(mouseX,mouseY,50,50);
+                    
+                }
+                    
      }
                 
             
