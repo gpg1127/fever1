@@ -6,7 +6,7 @@
         <title></title>
         <script  src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.js"></script>
         <script>
-            
+            var circleSize = 10;//원래 사이즈
 
     function setup(){
         createCanvas(500,500);
@@ -14,8 +14,11 @@
     }
             
         function mouseDragged(){
+            circleSize= circleSize+1;//서클사이즈에 1을 더함,드래그 할때마다 1씩 커짐.
             background(235);
-            console.log(1);//콘솔 창에 로그를 보여줌
+           ellipse(mouseX,mouseY,
+            circleSize,circleSize);
+            
         }
     
        
@@ -26,4 +29,4 @@
     <body>
     </body>
 
-</html>;
+</html>
