@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <title></title>
+        <script  src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.js"></script>
+        <script>
+            
+var startX;
+var startY;
+            
+    function setup(){
+        createCanvas(500,500);
+        background (235);
+    }
+            
+        function mousePressed(){//마우스를 클릭하면
+            startX = mouseX;
+            startY = mouseY;
+            
+        }
+           
+        function mouseDragged(){
+              line(startX,startY,mouseX,mouseY);
+        }
+            
+    
+            
+        function mouseReleased(){//마우스를 클릭하면
+            line(startX,startY,mouseX,mouseY);
+        }
+        
+    
+    </script>
+    </head>
+
+    <body>
+    </body>
+
+</html>;
