@@ -8,23 +8,24 @@
         <script>
             
     function setup(){
-        createCanvas(500,500);
-        background (0);
+        createCanvas(1000,500);
+        background (255);
     }
     
             function draw(){
-                background(0);
-                var moveX= mouseX - 250;
-                var moveY = mouseY - 250;
-               fill(50);
-         ellipse(250+moveX/3,250+moveY/3,200/3,200/3);  fill(120);
-        ellipse(250+moveX/2,250+moveY/2,200/2,200/2);
-          fill(240);
-        ellipse(250+moveX,250+moveY,200,200);
-                
-                
+                noFill();
+                background(255);
+                var moveX= mouseX - 250 ;
+                var moveY = mouseY - 250 ;
+         
+            for(var count =20;count>=1;count=count-1){
+                 ellipse(250+moveX/count,250+moveY/count,200/count,200/count);  
+               line(250+moveX/count,250+moveY/count,200/count,200/count);  
             }
     
+          
+            }
+            
     
     </script>
     </head>
