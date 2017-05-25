@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <title></title>
+        <script  src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.js"></script>
+        <script>
+    function setup(){
+        createCanvas(500,500);
+        background (235);
+    }
+        function mousePressed(){//마우스를 클릭하면
+            fill(255,100,50);//색이 변한다
+        ellipse(mouseX, mouseY,30,30);//원이 그려진다
+            
+        }
+            
+            
+        function mouseReleased(){//마우스를 클릭하면
+            fill(100,255,50);//색이 변한다
+        ellipse(mouseX, mouseY,30,30);//원이 그려진다
+            
+        }
+        
+    
+    </script>
+    </head>
+
+    <body>
+    </body>
+
+</html>
