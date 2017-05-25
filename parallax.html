@@ -19,7 +19,9 @@
                 var moveY = mouseY - 250 ;
          
             for(var count =20;count>=1;count=count-1){
-                 ellipse(250+moveX/count,250+moveY/count,200/count,200/count);  
+                 
+                strokeWeight(20/count);
+                ellipse(250+moveX/count,250+moveY/count,200/count,200/count);  
                line(250+moveX/count,250+moveY/count,200/count,200/count);  
             }
     
