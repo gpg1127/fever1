@@ -20,19 +20,28 @@ var PEndY;
     }
             
         function mousePressed(){//마우스를 클릭하면
+           background(235);
             startX = mouseX;
             startY = mouseY;
+             line(pStartX,pStartY,pEndX,pEndY);
             
         }
            
         function mouseDragged(){
-              line(startX,startY,mouseX,mouseY);
+            background(235);
+            
+            line(pStartX,pStartY,pEndX,pEndY);
+            line(startX,startY,mouseX,mouseY);
         }
             
     
             
         function mouseReleased(){//마우스를 클릭하면
             line(startX,startY,mouseX,mouseY);
+            pStartX = startX;
+            pStartY = startY;
+            pEndX = mouseX;
+            pEndY = mouseY;
         }
         
     
