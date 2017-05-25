@@ -23,14 +23,14 @@ var PEndY;
            background(235);
             startX = mouseX;
             startY = mouseY;
-             line(pStartX,pStartY,pEndX,pEndY);
+             line(pStartX,pStartY,pEndX,pEndY);//깜빡임을 줄이는 방법
             
         }
            
         function mouseDragged(){
             background(235);
             
-            line(pStartX,pStartY,pEndX,pEndY);
+            line(pStartX,pStartY,pEndX,pEndY);//이것으로 하나 더 그려주기
             line(startX,startY,mouseX,mouseY);
         }
             
